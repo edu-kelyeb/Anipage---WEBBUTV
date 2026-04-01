@@ -1,0 +1,31 @@
+.vertical-section{
+width: 200px;
+background-color: neon-pink;
+padding: 15px;
+border-radius: 10px;
+}
+
+.vertical-section h2 {
+color: white;
+list-style: none;
+padding: 0%;
+}
+
+.vertical-section ul {
+list-style: none;
+padding: 0;
+}
+
+.vertical-section li {
+    margin-bottom: 10px;
+}
+
+.vertical-section a{
+    color:red
+    text-decoration:none;
+    font-weight: bold;
+}
+
+.vertical-section{}
+
+
