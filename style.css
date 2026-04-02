@@ -1,3 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between; /*Detta gör att logotypen och menyn placeras på varsin sida av nav-baren, men också att de är jämnt fördelade över hela bredden av nav-baren. Går att ändra spacen mellan länkarna.*/
+  height: 100px; /*Detta ändrar höjden, så att det finns mer utrymme för logotypen och menyn. Går att ändra tills den passar din design.*/
+  align-items: center;
+  background-color: purple;
+}
+
 .vertical-section{
 width: 200px;
 background-color: neon-pink;
@@ -26,6 +39,4 @@ padding: 0;
     font-weight: bold;
 }
 
-.vertical-section{}
-
-
+.vertical-section{} */
