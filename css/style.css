@@ -5,42 +5,38 @@
 nav {
   padding: 0 20px;
   display: flex;
-  justify-content: space-between; /*Detta gör att logotypen och menyn placeras på varsin sida av nav-baren, men också att de är jämnt fördelade över hela bredden av nav-baren. Går att ändra spacen mellan länkarna.*/
+  justify-content: space-evenly; /*Detta gör att logotypen och menyn placeras på varsin sida av nav-baren, men också att de är jämnt fördelade över hela bredden av nav-baren. Går att ändra spacen mellan länkarna.*/
   height: 100px; /*Detta ändrar höjden, så att det finns mer utrymme för logotypen och menyn. Går att ändra tills den passar din design.*/
   align-items: center;
-  background-color: white;
+  background-color: red;
 }
 
-.vertical-section{
-width: 200px;
-background-color: neon-pink;
-padding: 15px;
-border-radius: 10px;
+.vertical-section {
+  width: 200px;
+  background-color: hotpink;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .vertical-section h2 {
-color: white;
-list-style: none;
-padding: 0%;
+  color: white;
+  list-style: none;
+  padding: 0%;
 }
 
 .vertical-section ul {
-list-style: none;
-padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .vertical-section li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-.vertical-section a{
-    color:red
-    text-decoration:none;
-    font-weight: bold;
-}
-
-.vertical-section{
-    background-color: neon-pink;
+.vertical-section a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .buttons {
