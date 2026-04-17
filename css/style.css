@@ -67,7 +67,7 @@ nav {
 
 .gallery img {
   width: 300px;
-  height: 200px;
+  height: 400px;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -95,4 +95,10 @@ nav {
 
 .titel a:hover {
   color: purple;
+}
+
+.front_pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
