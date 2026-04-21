@@ -11,6 +11,9 @@ nav {
   background-color: red;
 }
 
+.nav a:hover{
+  background-color: red;
+}
 .vertical-section {
   width: 200px;
   background-color: hotpink;
@@ -52,6 +55,8 @@ nav {
   color: white;
   text-decoration: none;
   border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
@@ -70,6 +75,11 @@ nav {
   height: 400px;
   object-fit: cover;
   border-radius: 5px;
+}
+
+.gallery img:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
 }
 
 .character {
@@ -123,6 +133,10 @@ nav {
   width: fit-content;
 }
 
+.link-item:hover {
+  background-color: red;
+}
+
 .link-item {
   padding: 10px 15px;
   background-color: purple;
@@ -131,11 +145,12 @@ nav {
   border-radius: 5px;
   font-weight: bold;
   display: inline-block;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
-.link-item:hover {
+.links-item:hover {
   background-color: #800080;
+  color: red;
 }
 
 .front_pic img {
