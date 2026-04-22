@@ -3,58 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ANIPAGE</title>
+    <title>ANIPAGE - Your Anime Hub</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script>
+      function switchLanguage(lang) {
+        const elements = document.querySelectorAll("[data-sv], [data-en]");
+        elements.forEach((el) => {
+          if (lang === "en") {
+            el.textContent = el.getAttribute("data-en");
+          } else {
+            el.textContent = el.getAttribute("data-sv");
+          }
+        });
+        document.documentElement.lang = lang;
+      }
+    </script>
   </head>
 
   <body>
     <header>
       <nav class="menu">
         <div class="logo">
-          <h1 class="titel">ANIPAGE</h1>
+          <h1 class="titel"><a href="index.html">ANIPAGE</a></h1>
         </div>
         <a href="action.html" class="menu-item">Action</a>
         <a href="romance.html" class="menu-item">Romance</a>
         <a href="sport.html" class="menu-item">Sport</a>
+        <a href="character-description.html" class="menu-item">Characters</a>
+        <button
+          class="lang-btn"
+          onclick="
+            switchLanguage(document.documentElement.lang === 'sv' ? 'en' : 'sv')
+          "
+        >
+          <span data-sv="EN" data-en="SV">EN</span>
+        </button>
       </nav>
     </header>
+
     <main>
-      <section>
-        <h2>karakterer</h2>
-        <p>Detta är en enkel sida byggd med HTML och CSS.</p>
-        <ul>
-          <li>
-            <a
-              href="https://onepiece.fandom.com/wiki/Monkey_D._Luffy"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Monkey D. Luffy</a
-            >
-          </li>
-          <li>
-            <a href="character-description.html">Character Description</a>
-          </li>
-        </ul>
+      <!-- Featured Image Banner -->
+      <section class="featured-banner">
+        <img src="images/jump_fest.jpg" alt="Jump Festival" />
       </section>
-      <div class="side-by-side">
-        <section class="links-section">
-          <h2>Famous Websites</h2>
-          <div class="links-container">
-            <a href="character-description.html">Character Description</a>
-            <a href="https://www.fandom.com/" target="_blank" rel="noopener noreferrer" class="link-item">fandomwiki</a>
-            <a href="https://myanimelist.net/" target="_blank" rel="noopener noreferrer" class="link-item">MyAnimeList</a>
-            <a href="https://mangaplus.shueisha.co.jp/updates" target="_blank" rel="noopener noreferrer" class="link-item">Manga Plus</a>
-            <a href="https://www.animenewsnetwork.com/" target="_blank" rel="noopener noreferrer" class="link-item">Anime News Network</a>
-            <a href="https://atsu.moe/" target="_blank" rel="noopener noreferrer" class="link-item">atsumaru</a>
-          </div>
-        </section>
-        <section>
-          <div class="front_pic">
-            <img src="images/jump_fest.jpg" alt="Jump Festival" />
-          </div>
-        </section>
+
+      <!-- Main Content Grid -->
+      <div class="main-grid">
+        <!-- Sidebar with Links and Characters -->
+        <aside class="sidebar">
+          <section class="links-section">
+            <h2 data-sv="Anime Resurser" data-en="Anime Resources">
+              Anime Resurser
+            </h2>
+            <div class="links-container">
+              <a
+                href="https://www.fandom.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-item"
+                >Fandom Wiki</a
+              >
+              <a
+                href="https://myanimelist.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-item"
+                >MyAnimeList</a
+              >
+              <a
+                href="https://mangaplus.shueisha.co.jp/updates"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-item"
+                >Manga Plus</a
+              >
+              <a
+                href="https://www.animenewsnetwork.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-item"
+                >Anime News Network</a
+              >
+              <a
+                href="https://atsu.moe/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="link-item"
+                >atsumaru</a
+              >
+            </div>
+          </section>
+
+          <section class="character-section">
+            <h2 data-sv="Utforska Karaktärer" data-en="Explore Characters">
+              Utforska Karaktärer
+            </h2>
+            <p
+              class="section-desc"
+              data-sv="Klicka på en karaktär för att lära dig mer om dem"
+              data-en="Click on a character to learn more about them"
+            >
+              Klicka på en karaktär för att lära dig mer om dem
+            </p>
+            <div class="character-grid">
+              <a href="luffy.html" class="character-card">
+                <img src="images/luffy.jpg" alt="Monkey D. Luffy" />
+                <span>Monkey D. Luffy</span>
+                <span class="anime-tag">One Piece</span>
+              </a>
+              <a href="naruto.html" class="character-card">
+                <img src="images/naruto.jpg" alt="Naruto Uzumaki" />
+                <span>Naruto Uzumaki</span>
+                <span class="anime-tag">Naruto</span>
+              </a>
+              <a href="ichigo.html" class="character-card">
+                <img src="images/ichigo.jpg" alt="Ichigo Kurosaki" />
+                <span>Ichigo Kurosaki</span>
+                <span class="anime-tag">Bleach</span>
+              </a>
+              <a href="goku.html" class="character-card">
+                <img src="images/goku.jpg" alt="Goku" />
+                <span>Goku</span>
+                <span class="anime-tag">Dragon Ball</span>
+              </a>
+              <a href="tanjiro.html" class="character-card">
+                <img src="images/tanjiro.jpg" alt="Tanjiro Kamado" />
+                <span>Tanjiro Kamado</span>
+                <span class="anime-tag">Demon Slayer</span>
+              </a>
+              <a href="gojo.html" class="character-card">
+                <img src="images/gojo.jpg" alt="Satoru Gojo" />
+                <span>Satoru Gojo</span>
+                <span class="anime-tag">Jujutsu Kaisen</span>
+              </a>
+            </div>
+            <a
+              href="character-description.html"
+              class="view-all-btn"
+              data-sv="Se alla karaktärer →"
+              data-en="View all characters →"
+              >Se alla karaktärer →</a
+            >
+          </section>
+        </aside>
       </div>
     </main>
+
     <footer>
       <p>&copy; 2026 Min Webbplats. Alla rättigheter förbehållna.</p>
     </footer>
