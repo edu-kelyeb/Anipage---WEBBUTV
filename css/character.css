@@ -83,6 +83,7 @@
   margin-bottom: 15px;
 }
 
+/* --- Abilities List --- */
 .abilities-list {
   list-style: none;
   padding: 0;
@@ -96,6 +97,7 @@
   border-left: 4px solid purple;
 }
 
+/* --- Back Link Button --- */
 .back-link {
   display: inline-block;
   margin: 20px 40px;
