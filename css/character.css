@@ -56,6 +56,10 @@
   border-left: 4px solid purple;
 }
 
+.abilities-list li:nth-child(even) {
+  border-left: 4px solid red;
+}
+
 /* --- Back Link Button --- */
 .back-link {
   display: inline-block;
