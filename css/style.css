@@ -1,7 +1,19 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url(Playfair_Display.zip) format('woff2');
+}
+
 * {
   margin: 0;
   padding: 0;
 }
+
+body{
+  font-family: "Playfair Display", serif;
+  background-color: #fff;
+  color: #111;
+}
+
 nav {
   padding: 0 20px;
   display: flex;
