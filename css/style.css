@@ -302,12 +302,12 @@ nav .lang-btn:hover {
 }
 
 /* Responsive */
-@media (max-width: 500px) {
-  .main-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .category-grid {
-    grid-template-columns: 1fr;
-  }
+@media screen and (max-width: 992px) {
 }
+  
+@media screen and(max-width: 768px) {
+}
+
+@media screen and (max-width: 600px) {
+}
+
