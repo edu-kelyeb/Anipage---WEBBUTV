@@ -192,6 +192,8 @@ nav .lang-btn:hover {
   padding: 20px;
   gap: 30px;
   align-items: flex-start;
+  background-image: url("/images/wallpaper.jpg");
+  background-size: cover;
 }
 
 .hero-characters {
@@ -214,6 +216,7 @@ nav .lang-btn:hover {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+
 }
 
 .sidebar {
