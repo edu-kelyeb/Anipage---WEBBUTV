@@ -22,12 +22,13 @@
 .character-info h1 {
   color: purple;
   font-size: 2.5rem;
+  font-family: "Asimovian", serif;
   margin-bottom: 10px;
 }
 
 .character-info .anime-title {
   color: #666;
-  font-style: italic;
+  font-family: "Asimovian", serif;
   margin-bottom: 20px;
 }
 
