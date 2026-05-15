@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/character.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   </head>
   <body>
     <header>
@@ -22,6 +23,7 @@
         <a href="action.html" class="menu-item">Action</a>
         <a href="romance.html" class="menu-item">Romance</a>
         <a href="sport.html" class="menu-item">Sport</a>
+        <button id="darkModeBtn" class="darkModeBtn">Dark Mode</button>
       </nav>
     </header>
 
@@ -107,9 +109,55 @@
         </div>
       </div>
     </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Footer Section 1: Quick Links -->
+        <section class="footer-section">
+          <h3 data-sv="Navigering" data-en="Navigation">Navigering</h3>
+          <ul>
+            <li><a href="index.html" data-sv="Hem" data-en="Home">Hem</a></li>
+            <li><a href="action.html" data-sv="Action" data-en="Action">Action</a></li>
+            <li><a href="romance.html" data-sv="Romantik" data-en="Romance">Romantik</a></li>
+            <li><a href="sport.html" data-sv="Sport" data-en="Sport">Sport</a></li>
+            <li><a href="character-description.html" data-sv="Karaktärer" data-en="Characters">Karaktärer</a></li>
+          </ul>
+        </section>
 
-    <footer>
-      <p>&copy; 2026 Min Webbplats. Alla rättigheter förbehållna.</p>
+        <!-- Footer Section 2: Resources -->
+        <section class="footer-section">
+          <h3 data-sv="Resurser" data-en="Resources">Resurser</h3>
+          <ul>
+            <li><a href="https://www.fandom.com/" target="_blank" rel="noopener noreferrer">Fandom Wiki</a></li>
+            <li><a href="https://myanimelist.net/" target="_blank" rel="noopener noreferrer">MyAnimeList</a></li>
+            <li><a href="https://mangaplus.shueisha.co.jp/" target="_blank" rel="noopener noreferrer">Manga Plus</a></li>
+            <li><a href="https://www.animenewsnetwork.com/" target="_blank" rel="noopener noreferrer">Anime News</a></li>
+          </ul>
+        </section>
+
+        <!-- Footer Section 3: Follow Us -->
+        <section class="footer-section">
+          <h3 data-sv="Följ Oss" data-en="Follow Us">Följ Oss</h3>
+          <div class="social-links">
+            <a href="#" class="social-icon" title="Twitter" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-icon" title="Discord" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+            <a href="#" class="social-icon" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon" title="YouTube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </section>
+
+        <!-- Footer Section 4: About -->
+        <section class="footer-section">
+          <h3 data-sv="Om Oss" data-en="About">Om Oss</h3>
+          <p data-sv="Din ultimate anime-hubb för karaktärer och information." data-en="Your ultimate anime hub for characters and information.">Din ultimate anime-hubb för karaktärer och information.</p>
+        </section>
+      </div>
+
+      <!-- Footer Bottom: Copyright -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 ANIPAGE. <span data-sv="Alla rättigheter förbehållna." data-en="All rights reserved.">Alla rättigheter förbehållna.</span></p>
+        <p class="footer-credit">Made with ❤️ for anime lovers</p>
+      </div>
     </footer>
+    <script src="java/lan.js"></script>
   </body>
 </html>
